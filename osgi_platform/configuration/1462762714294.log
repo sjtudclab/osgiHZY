@@ -1,0 +1,35 @@
+!SESSION 2016-05-09 10:58:34.177 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+
+!ENTRY org.eclipse.osgi 4 0 2016-05-09 10:58:34.801
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The bundle "org.eclipse.osgi_3.7.2.v20120110-1415 [17]" could not be resolved. Reason: Another singleton version selected: org.eclipse.osgi_3.8.2.v20130124-134944, Another singleton version selected: org.eclipse.osgi_3.8.2.v20130124-134944
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1332)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1316)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.osgi 4 0 2016-05-09 10:58:35.011
+!MESSAGE Bundle initial@reference:file:basic_plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2016-05-09 10:58:35.011
+!MESSAGE Could not find bundle: org.eclipse.equinox.console
+!STACK 0
+org.osgi.framework.BundleException: Could not find bundle: org.eclipse.equinox.console
+	at org.eclipse.osgi.framework.internal.core.ConsoleManager.checkForConsoleBundle(ConsoleManager.java:211)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:297)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:151)

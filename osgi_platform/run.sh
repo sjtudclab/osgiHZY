@@ -1,0 +1,1 @@
+java  -Dosgi.noShutdown=true -Dserver.home=. -Dbundles.configuration.location=./configuration -Dlogback.configurationFile=./configuration/logbackConfiguration.xml -Dosgi.bundles=hello.jar -jar equinox.jar -console 8090
