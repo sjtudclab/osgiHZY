@@ -20,7 +20,7 @@ public class Activator implements BundleActivator {
 		Bundle[] allbundles = context.getBundles();
 		for(int i = 0; i < allbundles.length; i++)
 			System.out.println(allbundles[i].getSymbolicName());
-		/*File f = new File("/Users/huang/Downloads/data-integration");
+		File f = new File("/Users/huang/Downloads/data-integration");
 		final String[] carte = {"/Users/huang/Downloads/data-integration/carte.sh","127.0.0.1","8080"};
 		process = Runtime.getRuntime().exec(carte,null, f);
 		java.io.InputStream is = process.getInputStream();   
@@ -31,7 +31,7 @@ public class Activator implements BundleActivator {
         String line = null;   
         while ((line = br.readLine()) != null) {   
              System.out.println(line); 
-        }*/
+        }
 		System.out.println("2016/05/30 18:19:40 - Carte - Installing timer to purge stale objects after 1440 minutes.\n2016/05/30 18:19:40 - Carte - 创建 web 服务监听器 @ 地址: 192.168.142.128:8080");
 		//System.out.println("nimahai");
 	}
